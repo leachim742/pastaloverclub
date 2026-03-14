@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Club — PastaLoverClub</title>
+  <meta name="description" content="Meet the PastaLoverClub — our history, mission, community, and the founders who started it all over a bowl of cacio e pepe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PastaLoverClub</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="club.html" class="nav__link active">The Club</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__cta"><a href="#join" class="btn btn-wine animate-pulseGlow">Join the Club</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="page-hero page-hero--sky" aria-label="Page hero">
+    <div class="container">
+      <h1 class="page-hero__title animate-fadeUp">We Are the<br>Pasta Lover Club</h1>
+      <p class="page-hero__subtitle animate-fadeUp-delay-1" style="color: var(--navy-stripe);">Born from a shared obsession with noodles, built on a community of thousands.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about-section" aria-labelledby="about-heading">
+    <div class="container about-section__inner">
+      <div class="about-section__text reveal">
+        <h2 id="about-heading">How It All Started</h2>
+        <p>It began, as many great things do, with a disagreement about carbonara. Three friends — Giulia, Marco, and Simone — were debating the correct use of cream in pasta recipes (spoiler: there is none) when they realized the world needed a dedicated space for people who truly, deeply care about pasta.</p>
+        <p>PastaLoverClub launched in 2019 as a small Instagram page and a shared Google Doc of family recipes. By 2021, we had grown into a community of over 5,000 members across 30 countries. Today, we're 10,000 strong — sharing recipes, debating shapes, and fiercely defending regional traditions.</p>
+        <p>Our mission is simple: <strong>celebrate pasta in all its forms</strong>. From a Tuesday night spaghetti aglio e olio to a Sunday ragù that simmers for six hours, every bowl deserves respect.</p>
+      </div>
+      <div class="about-section__visual reveal">
+        <!-- Decorative pasta illustration -->
+        <svg width="320" height="300" viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Background blob -->
+          <ellipse cx="160" cy="155" rx="140" ry="130" fill="var(--sky)" opacity="0.4"/>
+          <!-- Big pasta plate -->
+          <ellipse cx="160" cy="200" rx="120" ry="20" fill="rgba(107,26,42,0.1)"/>
+          <ellipse cx="160" cy="185" rx="110" ry="18" fill="var(--cream)" stroke="var(--tangerine)" stroke-width="3"/>
+          <!-- Pasta strands -->
+          <path d="M70 170 Q100 150 130 170 Q160 190 190 170 Q220 150 250 165" stroke="var(--wine)" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M75 182 Q105 162 135 182 Q165 202 195 182 Q225 162 248 177" stroke="var(--wine)" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M80 195 Q110 178 140 195 Q170 212 200 195 Q228 178 246 190" stroke="var(--wine)" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- Sauce -->
+          <circle cx="148" cy="178" r="9" fill="var(--tangerine)" opacity="0.7"/>
+          <circle cx="178" cy="190" r="7" fill="var(--tangerine)" opacity="0.6"/>
+          <!-- Basil -->
+          <ellipse cx="165" cy="165" rx="12" ry="7" fill="var(--forest)" transform="rotate(-15 165 165)" opacity="0.9"/>
+          <!-- Fork sticking up -->
+          <line x1="230" y1="100" x2="230" y2="185" stroke="var(--navy-stripe)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="222" y1="100" x2="222" y2="120" stroke="var(--navy-stripe)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="230" y1="100" x2="230" y2="120" stroke="var(--navy-stripe)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="238" y1="100" x2="238" y2="120" stroke="var(--navy-stripe)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Stars / sparkles -->
+          <text x="50" y="80" font-size="20" opacity="0.5">✦</text>
+          <text x="260" y="70" font-size="14" opacity="0.4">✦</text>
+          <text x="90" y="50" font-size="12" opacity="0.35">✦</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MISSION ===================== -->
+  <section class="section bg-sky" aria-labelledby="mission-heading">
+    <div class="container" style="max-width: 720px; text-align: center;">
+      <div class="reveal">
+        <span class="tag tag-blush" style="margin-bottom: 1rem; display: inline-block;">Our Mission</span>
+        <h2 id="mission-heading" style="margin-bottom: 1.25rem;">Pasta is for everyone.</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--navy-stripe);">We believe in the democratizing power of a perfect plate of pasta. It doesn't matter if you're a Michelin-starred chef or someone who just mastered boiling water — if you love pasta, you belong here. We curate recipes, foster community, and occasionally argue about whether rigatoni is superior to penne (it is).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section" style="background-color: var(--cream); border-top: 2px solid var(--navy-stripe); border-bottom: 2px solid var(--navy-stripe);" aria-labelledby="stats-heading">
+    <div class="container">
+      <h2 id="stats-heading" class="text-center reveal" style="margin-bottom: 2rem;">By the Numbers</h2>
+      <div class="stats-row reveal-stagger">
+        <div class="stat-item reveal">
+          <span class="stat-item__number">10K+</span>
+          <span class="stat-item__label">Members Worldwide</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number">500+</span>
+          <span class="stat-item__label">Tested Recipes</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number">50+</span>
+          <span class="stat-item__label">Countries Represented</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOUNDERS / TEAM ===================== -->
+  <section class="section" style="background-color: var(--blush);" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2 id="team-heading">Meet the Founders</h2>
+        <p>Three friends, one shared obsession, zero tolerance for overcooked pasta.</p>
+      </div>
+      <div class="team-grid reveal-stagger">
+        <!-- Founder 1 -->
+        <div class="team-card reveal">
+          <div class="team-card__avatar">👩‍🍳</div>
+          <h3 class="team-card__name">Giulia Ferretti</h3>
+          <p class="team-card__role">Head of Recipes &amp; Soul</p>
+          <p class="team-card__bio">Giulia grew up watching her nonna roll pasta every Sunday in Bologna. She holds a firm opinion that dried spaghetti is just as valid as fresh, and she will debate you about it with a glass of Chianti in hand.</p>
+        </div>
+        <!-- Founder 2 -->
+        <div class="team-card reveal">
+          <div class="team-card__avatar">👨‍💻</div>
+          <h3 class="team-card__name">Marco Delgatto</h3>
+          <p class="team-card__role">Tech &amp; Community Lead</p>
+          <p class="team-card__bio">Marco built the first version of PLC in a weekend using nothing but caffeine and carbonara. He's passionate about open-source software, regional pasta shapes, and proving that bucatini is criminally underrated.</p>
+        </div>
+        <!-- Founder 3 -->
+        <div class="team-card reveal">
+          <div class="team-card__avatar">🎨</div>
+          <h3 class="team-card__name">Simone Bianchi</h3>
+          <p class="team-card__role">Creative &amp; Merch Director</p>
+          <p class="team-card__bio">Simone is the visual genius behind the PLC brand and the legendary sock design. They spend their days designing merch and their evenings perfecting cacio e pepe, occasionally doing both at the same time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== JOIN SECTION ===================== -->
+  <section class="join-section" id="join" aria-labelledby="join-heading">
+    <div class="container">
+      <div class="section__header reveal" style="margin-bottom: 2rem;">
+        <h2 id="join-heading">Join the Club</h2>
+        <p>Free membership. Priceless pasta content. No spam — we promise.</p>
+      </div>
+      <div class="reveal">
+        <form class="join-form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Membership signup form">
+          <h3>Become a Member</h3>
+          <div class="form-group">
+            <label class="form-label" for="join-name">Your Name</label>
+            <input class="form-input" type="text" id="join-name" name="name" placeholder="e.g. Marco Polo (pasta explorer)" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="join-email">Email Address</label>
+            <input class="form-input" type="email" id="join-email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="join-pasta">Favorite Pasta Shape</label>
+            <input class="form-input" type="text" id="join-pasta" name="favorite_pasta" placeholder="Be honest. There's no wrong answer... except macaroni." />
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-wine btn-large" style="width: 100%; justify-content: center;">Sign Me Up 🍝</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">PastaLoverClub</a>
+          <p class="footer__tagline">al dente since forever</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="club.html" class="footer__link">About</a></li>
+            <li><a href="gallery.html" class="footer__link">Recipes</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="club.html#join" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PastaLoverClub. Made with 🍝 and questionable amounts of parmesan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

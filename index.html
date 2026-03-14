@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PastaLoverClub — Home</title>
+  <meta name="description" content="Welcome to PastaLoverClub — where every strand tells a story. Join 10,000+ pasta lovers sharing recipes, tips, and sauce opinions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PastaLoverClub</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="club.html" class="nav__link">The Club</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__cta"><a href="club.html#join" class="btn btn-wine animate-pulseGlow">Join the Club</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Hero">
+    <!-- Background noodle/fork SVG pattern -->
+    <div class="hero__bg-pattern" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="noodle-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+            <!-- Squiggly noodle -->
+            <path d="M10 30 Q25 15 40 30 Q55 45 70 30 Q85 15 100 30" stroke="#2C2C6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Fork -->
+            <line x1="85" y1="70" x2="85" y2="100" stroke="#2C2C6B" stroke-width="2" stroke-linecap="round"/>
+            <line x1="80" y1="70" x2="80" y2="80" stroke="#2C2C6B" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="85" y1="70" x2="85" y2="80" stroke="#2C2C6B" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="90" y1="70" x2="90" y2="80" stroke="#2C2C6B" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Spiral noodle -->
+            <path d="M20 80 Q30 72 40 80 Q50 88 60 80" stroke="#2C2C6B" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#noodle-pattern)"/>
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <!-- Left: Text -->
+      <div class="hero__text">
+        <h1 class="hero__title animate-fadeUp">Welcome to the<br>Pasta Lover Club</h1>
+        <p class="hero__subtitle animate-fadeUp-delay-1">Where every strand tells a story.</p>
+        <div class="animate-fadeUp-delay-2">
+          <a href="gallery.html" class="btn btn-primary btn-large">Explore Recipes</a>
+        </div>
+      </div>
+
+      <!-- Right: Pasta Bowl SVG Illustration -->
+      <div class="hero__visual animate-fadeUp-delay-1">
+        <!-- Blush blob behind the bowl -->
+        <div class="hero__blob" aria-hidden="true"></div>
+        <!-- Pasta Bowl SVG -->
+        <div class="hero__bowl-wrap animate-float" aria-label="Pasta bowl illustration">
+          <svg width="340" height="320" viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a steaming pasta bowl">
+            <!-- Steam wisps -->
+            <path d="M130 85 Q125 65 132 50 Q139 35 133 18" stroke="#6B1A2A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <path d="M170 78 Q163 55 170 38 Q177 21 172 6" stroke="#6B1A2A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <path d="M210 85 Q216 65 210 50 Q204 35 210 18" stroke="#6B1A2A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <!-- Bowl outer shadow/base -->
+            <ellipse cx="170" cy="265" rx="118" ry="16" fill="rgba(107,26,42,0.12)"/>
+            <!-- Bowl body -->
+            <path d="M52 160 Q52 270 170 278 Q288 270 288 160 Z" fill="#FFF8F0"/>
+            <!-- Tangerine dashed border on bowl rim -->
+            <ellipse cx="170" cy="160" rx="118" ry="32" fill="#FFF8F0" stroke="#F28C1A" stroke-width="3.5" stroke-dasharray="10 6"/>
+            <!-- Noodles inside bowl -->
+            <!-- Noodle layer 1 -->
+            <path d="M95 175 Q115 162 135 175 Q155 188 175 175 Q195 162 215 175 Q235 188 248 178" stroke="#6B1A2A" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <!-- Noodle layer 2 -->
+            <path d="M88 192 Q110 178 132 192 Q154 206 176 192 Q198 178 220 192 Q242 206 252 196" stroke="#6B1A2A" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <!-- Noodle layer 3 -->
+            <path d="M94 210 Q118 197 142 210 Q166 223 190 210 Q214 197 238 210 Q250 216 254 212" stroke="#6B1A2A" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+            <!-- Noodle layer 4 (shorter, deeper in bowl) -->
+            <path d="M108 228 Q130 216 152 228 Q174 240 196 228 Q218 216 238 226" stroke="#6B1A2A" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- Sauce blobs -->
+            <circle cx="145" cy="200" r="8" fill="#F28C1A" opacity="0.7"/>
+            <circle cx="200" cy="218" r="6" fill="#F28C1A" opacity="0.6"/>
+            <circle cx="167" cy="235" r="5" fill="#F28C1A" opacity="0.65"/>
+            <!-- Parmesan fleck dots -->
+            <circle cx="130" cy="188" r="3" fill="#FFF8F0" opacity="0.9"/>
+            <circle cx="175" cy="208" r="2.5" fill="#FFF8F0" opacity="0.85"/>
+            <circle cx="215" cy="193" r="3" fill="#FFF8F0" opacity="0.9"/>
+            <circle cx="158" cy="222" r="2" fill="#FFF8F0" opacity="0.8"/>
+            <!-- Basil leaf accent -->
+            <ellipse cx="190" cy="182" rx="11" ry="6" fill="#2A8C6E" transform="rotate(-20 190 182)" opacity="0.85"/>
+            <line x1="190" y1="178" x2="190" y2="188" stroke="#226f57" stroke-width="1" stroke-linecap="round"/>
+            <!-- Bowl highlight gloss -->
+            <ellipse cx="130" cy="155" rx="35" ry="8" fill="rgba(255,255,255,0.4)" transform="rotate(-10 130 155)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY WE'RE DIFFERENT ===================== -->
+  <section class="features-strip" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="features-strip__grid reveal-stagger">
+        <!-- Real Recipes -->
+        <div class="feature-item reveal">
+          <div class="feature-item__icon">
+            <i data-feather="book-open"></i>
+          </div>
+          <h3>Real Recipes</h3>
+          <p>From nonnas to food bloggers, every recipe is tested and loved.</p>
+        </div>
+        <!-- Real Community -->
+        <div class="feature-item reveal">
+          <div class="feature-item__icon">
+            <i data-feather="users"></i>
+          </div>
+          <h3>Real Community</h3>
+          <p>10,000+ pasta lovers sharing tips, stories, and sauce opinions.</p>
+        </div>
+        <!-- Real Merch -->
+        <div class="feature-item reveal">
+          <div class="feature-item__icon">
+            <i data-feather="shopping-bag"></i>
+          </div>
+          <h3>Real Merch</h3>
+          <p>Wear your love for pasta. Socks, tees, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED GALLERY ===================== -->
+  <section class="section bg-sky" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section__header">
+        <h2 id="gallery-heading">This Week's Favorites</h2>
+        <p>Our community's most-loved pasta dishes, fresh from the kitchen.</p>
+      </div>
+      <div class="recipe-grid reveal-stagger">
+        <!-- Card 1 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #f9e0d0;">🍝</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Cacio e Pepe</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">20 min</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #ffe0a0;">🥚</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Carbonara</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Classic</span>
+              <span class="tag tag-sky">25 min</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #ffd0d8;">🫕</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Lasagna Bolognese</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Baked</span>
+              <span class="tag tag-sky">2 hrs</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #d0f0d8;">🌿</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Pesto Genovese</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Vegetarian</span>
+              <span class="tag tag-sky">15 min</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #ffe8d0;">🍅</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Amatriciana</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">30 min</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="recipe-card reveal card-lift">
+          <div class="recipe-card__image" style="background-color: #f8f0d0;">🧄</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Aglio e Olio</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Quick &amp; Easy</span>
+              <span class="tag tag-sky">12 min</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top: 2.5rem;">
+        <a href="gallery.html" class="btn btn-wine">See All Recipes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMMUNITY BANNER ===================== -->
+  <section class="community-banner" aria-label="Community call to action">
+    <!-- Decorative fork/noodle SVG pattern -->
+    <div class="community-banner__pattern" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="fork-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M15 10 Q25 25 15 40 Q5 55 15 70" stroke="#FFF8F0" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <line x1="60" y1="20" x2="60" y2="80" stroke="#FFF8F0" stroke-width="2" stroke-linecap="round"/>
+            <line x1="55" y1="20" x2="55" y2="35" stroke="#FFF8F0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="60" y1="20" x2="60" y2="35" stroke="#FFF8F0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="65" y1="20" x2="65" y2="35" stroke="#FFF8F0" stroke-width="1.5" stroke-linecap="round"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#fork-pattern)"/>
+      </svg>
+    </div>
+
+    <div class="community-banner__inner reveal">
+      <p class="community-banner__title">You belong here.</p>
+      <p class="community-banner__subtitle">Join thousands of pasta lovers sharing recipes, stories, and questionable noodle opinions.</p>
+      <a href="club.html#join" class="btn btn-wine btn-large">Become a Member</a>
+    </div>
+  </section>
+
+  <!-- ===================== MERCH SPOTLIGHT ===================== -->
+  <section class="merch-spotlight" aria-labelledby="merch-heading">
+    <div class="container merch-spotlight__inner">
+      <div class="merch-spotlight__text reveal">
+        <h2 id="merch-heading">Wear Your Passion</h2>
+        <p>Our community merch is made for real pasta lovers. Soft, fun, and guaranteed to spark a conversation about spaghetti al dente.</p>
+        <a href="shop.html" class="btn btn-secondary btn-large">Shop the Collection</a>
+      </div>
+      <div class="reveal">
+        <div class="merch-card">
+          <div class="merch-card__badge">
+            <span class="badge">Fan Favorite</span>
+          </div>
+          <span class="merch-card__emoji">🧦</span>
+          <p class="merch-card__name">Pasta Lover Club Socks</p>
+          <p class="merch-card__price">$18</p>
+          <p style="font-size:0.95rem; color: var(--navy-stripe); margin-bottom: 1.25rem;">Sky blue body, forest green cuffs, tangerine noodle embroidery — the perfect pair for any pasta occasion.</p>
+          <a href="shop.html" class="btn btn-wine">Get Your Pair</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">PastaLoverClub</a>
+          <p class="footer__tagline">al dente since forever</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="club.html" class="footer__link">About</a></li>
+            <li><a href="gallery.html" class="footer__link">Recipes</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="club.html#join" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <i data-feather="twitter"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <i data-feather="facebook"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PastaLoverClub. Made with 🍝 and questionable amounts of parmesan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

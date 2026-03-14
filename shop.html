@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — PastaLoverClub</title>
+  <meta name="description" content="Shop PastaLoverClub merch — socks, tees, enamel pins, totes, and more. Wear your love for pasta every day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .shop-hero-visual {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 45%;
+      overflow: hidden;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PastaLoverClub</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="club.html" class="nav__link">The Club</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="shop.html" class="nav__link active">Shop</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__cta"><a href="club.html#join" class="btn btn-wine animate-pulseGlow">Join the Club</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="page-hero page-hero--blush" style="position: relative;" aria-label="Shop hero">
+    <div class="container" style="position: relative; z-index: 1;">
+      <h1 class="page-hero__title animate-fadeUp" style="color: var(--wine);">Wear Your Pasta Love</h1>
+      <p class="page-hero__subtitle animate-fadeUp-delay-1" style="color: var(--wine); opacity: 0.8;">Official PastaLoverClub merch — designed for the pasta-obsessed. Every purchase supports the community.</p>
+      <div class="animate-fadeUp-delay-2" style="margin-top: 1.75rem;">
+        <span class="tag tag-cream" style="font-size: 1.1rem; padding: 0.4rem 1rem;">Free shipping on orders over $50</span>
+      </div>
+    </div>
+    <!-- Decorative sock SVG in background -->
+    <div style="position: absolute; right: 8%; top: 50%; transform: translateY(-50%); opacity: 0.15; pointer-events: none;" aria-hidden="true">
+      <svg width="200" height="220" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sock shape -->
+        <path d="M60 10 L60 130 Q60 170 100 185 Q140 200 155 165 Q170 130 145 115 L145 10 Z" fill="var(--wine)" stroke="var(--navy-stripe)" stroke-width="3"/>
+        <!-- Cuff -->
+        <rect x="60" y="10" width="85" height="30" rx="5" fill="var(--forest)"/>
+        <!-- Stripe -->
+        <line x1="60" y1="40" x2="145" y2="40" stroke="var(--navy-stripe)" stroke-width="3"/>
+        <!-- Noodle decoration on sock -->
+        <path d="M75 80 Q85 70 95 80 Q105 90 115 80 Q125 70 135 78" stroke="var(--tangerine)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M75 95 Q85 85 95 95 Q105 105 115 95 Q125 85 135 93" stroke="var(--tangerine)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCT GRID ===================== -->
+  <section class="section" style="background-color: var(--cream);" aria-labelledby="products-heading">
+    <div class="container">
+      <h2 id="products-heading" class="text-center reveal" style="margin-bottom: 2.5rem;">The Collection</h2>
+      <div class="product-grid reveal-stagger">
+
+        <!-- Product 1: Socks (Fan Favorite) -->
+        <div class="product-card reveal">
+          <div class="product-card__badge">
+            <span class="badge">Fan Favorite</span>
+          </div>
+          <div class="product-card__emoji">🧦</div>
+          <p class="product-card__name">Pasta Lover Club Socks</p>
+          <p class="product-card__price">$18</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">Sky blue body, forest green cuffs, noodle embroidery. One size fits most.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Product 2: Tee Shirt -->
+        <div class="product-card reveal">
+          <div class="product-card__emoji">👕</div>
+          <p class="product-card__name">PLC Tee Shirt</p>
+          <p class="product-card__price">$32</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">100% organic cotton. "Pasta Lover Club" in Pacifico across the chest. Sizes XS–3XL.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Product 3: Enamel Pin Set -->
+        <div class="product-card reveal">
+          <div class="product-card__emoji">📌</div>
+          <p class="product-card__name">Enamel Pin Set</p>
+          <p class="product-card__price">$14</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">Set of 4 pins: fork, noodle swirl, PLC logo, and a tiny pasta bowl. Hard enamel.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Product 4: Tote Bag -->
+        <div class="product-card reveal">
+          <div class="product-card__emoji">👜</div>
+          <p class="product-card__name">Tote Bag</p>
+          <p class="product-card__price">$24</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">Heavy canvas tote with "al dente since forever" in Caveat font. Holds a week's worth of pasta.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Product 5: Mug -->
+        <div class="product-card reveal">
+          <div class="product-card__emoji">☕</div>
+          <p class="product-card__name">Mug "Al Dente"</p>
+          <p class="product-card__price">$22</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">12oz ceramic mug. "Al Dente" on one side, a noodle illustration on the other. Dishwasher safe.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Product 6: Cap -->
+        <div class="product-card reveal">
+          <div class="product-card__emoji">🧢</div>
+          <p class="product-card__name">Cap "PLC"</p>
+          <p class="product-card__price">$28</p>
+          <p style="font-size: 0.9rem; color: var(--navy-stripe); text-align: center; line-height: 1.5;">Structured 6-panel cap in forest green with embroidered "PLC" in tangerine. Adjustable strap.</p>
+          <button class="btn btn-wine" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+            <i data-feather="shopping-cart" style="width:16px; height:16px;"></i>
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMING SOON / NEWSLETTER ===================== -->
+  <section style="background-color: var(--navy-stripe); padding: 4rem 0; text-align: center; position: relative; overflow: hidden;" aria-labelledby="coming-soon-heading">
+    <!-- Decorative background pattern -->
+    <div style="position: absolute; inset: 0; opacity: 0.05; pointer-events: none;" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="coming-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+            <circle cx="40" cy="40" r="25" fill="none" stroke="#FFF8F0" stroke-width="2" stroke-dasharray="5 3"/>
+            <text x="28" y="45" font-size="18" fill="#FFF8F0">🍝</text>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#coming-pattern)"/>
+      </svg>
+    </div>
+    <div class="container" style="position: relative; z-index: 1; max-width: 600px;">
+      <div class="reveal">
+        <span class="badge" style="margin-bottom: 1.25rem; display: inline-block; background-color: var(--tangerine);">Coming Soon</span>
+        <h2 id="coming-soon-heading" style="color: var(--cream); font-family: var(--font-headline); font-style: italic; font-size: 2rem; margin-bottom: 1rem;">New Drops Every Season</h2>
+        <p style="color: var(--blush); margin-bottom: 1.75rem; line-height: 1.7;">Limited edition holiday socks, pasta-shaped jewelry, and a secret collab with a famous Italian food brand. Be first to know.</p>
+        <form style="display: flex; gap: 0.75rem; max-width: 420px; margin: 0 auto;" aria-label="Newsletter signup">
+          <input type="email" class="form-input" placeholder="your@email.com" style="flex: 1; background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25); color: var(--cream);" />
+          <button type="submit" class="btn btn-wine" style="white-space: nowrap;">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">PastaLoverClub</a>
+          <p class="footer__tagline">al dente since forever</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="club.html" class="footer__link">About</a></li>
+            <li><a href="gallery.html" class="footer__link">Recipes</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="club.html#join" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PastaLoverClub. Made with 🍝 and questionable amounts of parmesan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

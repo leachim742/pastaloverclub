@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pasta Gallery — PastaLoverClub</title>
+  <meta name="description" content="Browse our full collection of pasta recipes — from quick weeknight meals to slow Sunday classics. Filter by style and find your next favorite." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PastaLoverClub</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="club.html" class="nav__link">The Club</a></li>
+        <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li class="nav__cta"><a href="club.html#join" class="btn btn-wine animate-pulseGlow">Join the Club</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="page-hero page-hero--sky" aria-label="Gallery hero">
+    <div class="container">
+      <h1 class="page-hero__title animate-fadeUp">The Pasta Gallery</h1>
+      <p class="page-hero__subtitle animate-fadeUp-delay-1" style="color: var(--navy-stripe);">Community-tested, nonna-approved recipes for every shape and occasion.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section" style="background-color: var(--cream);" aria-labelledby="gallery-heading">
+    <div class="container">
+      <h2 id="gallery-heading" class="visually-hidden">Recipe Gallery</h2>
+
+      <!-- Filter Tags -->
+      <div class="filter-row" role="group" aria-label="Filter recipes by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="quick">Quick &amp; Easy</button>
+        <button class="filter-btn" data-filter="traditional">Traditional</button>
+        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+        <button class="filter-btn" data-filter="baked">Baked</button>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="gallery-grid reveal-stagger">
+
+        <!-- 1: Cacio e Pepe -->
+        <article class="recipe-card reveal card-lift" data-categories="traditional quick">
+          <div class="recipe-card__image" style="background-color: #faf0e0; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🍝</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Cacio e Pepe</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">20 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2: Carbonara -->
+        <article class="recipe-card reveal card-lift" data-categories="traditional">
+          <div class="recipe-card__image" style="background-color: #fff3c0; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🥚</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Carbonara</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">25 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Medium</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3: Lasagna Bolognese -->
+        <article class="recipe-card reveal card-lift" data-categories="baked traditional">
+          <div class="recipe-card__image" style="background-color: #ffd8d8; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🫕</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Lasagna Bolognese</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Baked</span>
+              <span class="tag tag-sky">2 hrs</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Advanced</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4: Pesto Genovese -->
+        <article class="recipe-card reveal card-lift" data-categories="vegetarian quick">
+          <div class="recipe-card__image" style="background-color: #d4f0d8; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🌿</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Pesto Genovese</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Vegetarian</span>
+              <span class="tag tag-sky">15 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5: Amatriciana -->
+        <article class="recipe-card reveal card-lift" data-categories="traditional">
+          <div class="recipe-card__image" style="background-color: #ffe4c4; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🍅</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Amatriciana</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">30 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6: Aglio e Olio -->
+        <article class="recipe-card reveal card-lift" data-categories="quick vegetarian">
+          <div class="recipe-card__image" style="background-color: #f8f4d0; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🧄</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Aglio e Olio</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Quick &amp; Easy</span>
+              <span class="tag tag-sky">12 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7: Pasta e Fagioli -->
+        <article class="recipe-card reveal card-lift" data-categories="traditional vegetarian">
+          <div class="recipe-card__image" style="background-color: #f0e4c8; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🫘</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Pasta e Fagioli</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">45 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8: Tagliatelle al Ragù -->
+        <article class="recipe-card reveal card-lift" data-categories="traditional">
+          <div class="recipe-card__image" style="background-color: #f0d8c0; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🥩</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Tagliatelle al Ragù</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Traditional</span>
+              <span class="tag tag-sky">3 hrs</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Medium</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9: Pasta Primavera -->
+        <article class="recipe-card reveal card-lift" data-categories="vegetarian quick">
+          <div class="recipe-card__image" style="background-color: #e0f8e0; font-size: 2.8rem; display:flex; align-items:center; justify-content:center;">🥦</div>
+          <div class="recipe-card__body">
+            <h3 class="recipe-card__title">Pasta Primavera</h3>
+            <div class="recipe-card__meta">
+              <span class="tag tag-blush">Vegetarian</span>
+              <span class="tag tag-sky">20 min</span>
+              <span class="tag tag-tangerine" style="color: var(--cream);">Easy</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SUBMIT CTA ===================== -->
+  <section class="cta-section" aria-labelledby="submit-heading">
+    <div class="container" style="max-width: 600px; text-align: center;">
+      <div class="reveal">
+        <span class="tag tag-blush" style="margin-bottom: 1rem; display: inline-block;">Got a recipe?</span>
+        <h2 id="submit-heading" style="color: var(--cream); margin-bottom: 1rem;">Share Your Pasta Story</h2>
+        <p style="color: var(--blush); margin-bottom: 1.75rem;">Think your recipe deserves a spot in the gallery? We review every submission personally and feature the best ones every week.</p>
+        <a href="club.html#join" class="btn btn-wine btn-large">Submit Your Recipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">PastaLoverClub</a>
+          <p class="footer__tagline">al dente since forever</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="club.html" class="footer__link">About</a></li>
+            <li><a href="gallery.html" class="footer__link">Recipes</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="club.html#join" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PastaLoverClub. Made with 🍝 and questionable amounts of parmesan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

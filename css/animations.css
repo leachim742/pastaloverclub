@@ -1,0 +1,124 @@
+/* ============================================
+   PASTALOVERCLUB — ANIMATIONS
+   ============================================ */
+
+/* --- fadeUp: hero text staggered entrance --- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- float: pasta bowl gentle bob --- */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+/* --- pulseGlow: nav CTA button pulse --- */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(242, 140, 26, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(242, 140, 26, 0);
+  }
+}
+
+/* --- spin: gallery image hover spin --- */
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(1.05);
+  }
+  to {
+    transform: rotate(8deg) scale(1.08);
+  }
+}
+
+/* --- reveal: IntersectionObserver scroll reveal --- */
+@keyframes revealFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base state for scroll-reveal elements */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for child elements */
+.reveal-stagger > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger > *:nth-child(6) { transition-delay: 0.55s; }
+
+/* Apply animation classes */
+.animate-fadeUp {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.animate-fadeUp-delay-1 {
+  animation: fadeUp 0.7s ease 0.15s forwards;
+  opacity: 0;
+}
+
+.animate-fadeUp-delay-2 {
+  animation: fadeUp 0.7s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fadeUp-delay-3 {
+  animation: fadeUp 0.7s ease 0.45s forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float 3.8s ease-in-out infinite;
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 2.2s ease-in-out infinite;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(107, 26, 42, 0.15);
+}
+
+/* Image hover spin */
+.img-spin {
+  transition: transform 0.4s ease;
+}
+
+.img-spin:hover {
+  animation: spin 0.4s ease forwards;
+}

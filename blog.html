@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories &amp; Stirring Tales — PastaLoverClub</title>
+  <meta name="description" content="Recipes, stories, and pasta wisdom from the PastaLoverClub community. Read about the science of al dente, nonna secrets, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&family=DM+Sans:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .blog-hero-deco {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 8rem;
+      opacity: 0.08;
+      pointer-events: none;
+      line-height: 1;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">PastaLoverClub</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="club.html" class="nav__link">The Club</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="blog.html" class="nav__link active">Blog</a></li>
+        <li class="nav__cta"><a href="club.html#join" class="btn btn-wine animate-pulseGlow">Join the Club</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="page-hero page-hero--cream" style="position: relative; overflow: hidden;" aria-label="Blog hero">
+    <div class="blog-hero-deco" aria-hidden="true">📖</div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <h1 class="page-hero__title animate-fadeUp" style="color: var(--wine);">Stories &amp; Stirring Tales</h1>
+      <p class="page-hero__subtitle animate-fadeUp-delay-1" style="color: var(--navy-stripe);">Long reads, quick tips, heated debates, and love letters to pasta.</p>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG GRID ===================== -->
+  <section class="section" style="background-color: var(--sky);" aria-labelledby="blog-heading">
+    <div class="container">
+      <h2 id="blog-heading" class="visually-hidden">Blog Posts</h2>
+      <div class="blog-grid reveal-stagger">
+
+        <!-- Post 1 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-blush">Science</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">March 8, 2026 · 7 min read</span>
+          </div>
+          <h3 class="blog-card__title">The Science of Perfect Al Dente</h3>
+          <p class="blog-card__excerpt">What does "al dente" really mean on a molecular level? We consulted a food scientist, a nonna, and a structural engineer (long story) to find the definitive answer. Spoiler: it's all about starch.</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-blush">Community</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">February 22, 2026 · 5 min read</span>
+          </div>
+          <h3 class="blog-card__title">My Nonna's Secret Carbonara</h3>
+          <p class="blog-card__excerpt">When Giulia's grandmother passed down her carbonara recipe, she included one instruction that isn't in any cookbook. It involves a wooden spoon, a specific wrist motion, and a lot of muttering in Romagnolo dialect.</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-forest" style="color: var(--cream);">Behind the Scenes</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">February 10, 2026 · 10 min read</span>
+          </div>
+          <h3 class="blog-card__title">How We Built a Community of 10,000 Pasta Lovers</h3>
+          <p class="blog-card__excerpt">From a single Instagram post about "the correct way to break spaghetti" (never, by the way) to a global community — the messy, beautiful, surprisingly drama-free story of PastaLoverClub.</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-blush">Debate Club</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">January 30, 2026 · 4 min read</span>
+          </div>
+          <h3 class="blog-card__title">The Great Pasta Shape Debate: Rigatoni vs Penne</h3>
+          <p class="blog-card__excerpt">We polled 847 members, consulted three Italian chefs, and ran a blind taste test with the same sauce. The results were conclusive — and deeply divisive. We are not responsible for any arguments this article causes.</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-tangerine" style="color: var(--cream);">Travel</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">January 14, 2026 · 8 min read</span>
+          </div>
+          <h3 class="blog-card__title">Pasta Road Trip: Eating Through Bologna</h3>
+          <p class="blog-card__excerpt">Four days. Twelve restaurants. One mission: to eat every variation of tagliatelle al ragù that Bologna has to offer. Our correspondent Marco reports back, somewhat deliriously, from what he calls "the most important research trip of his life."</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-card reveal">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="tag tag-blush">Culture</span>
+            <span style="font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-stripe); opacity: 0.7;">December 28, 2025 · 6 min read</span>
+          </div>
+          <h3 class="blog-card__title">Why Pasta Is the World's Most Democratic Food</h3>
+          <p class="blog-card__excerpt">Every culture has its version. From the egg noodles of Sichuan to the fideos of Catalonia, humanity has independently arrived at the same genius conclusion: flour + water + heat = something magnificent. A brief history of noodle diplomacy.</p>
+          <a href="#" class="blog-card__read-more">
+            Read More
+            <i data-feather="arrow-right" style="width:16px; height:16px;"></i>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="newsletter__inner">
+      <div class="reveal">
+        <!-- Decorative icon -->
+        <div style="margin-bottom: 1rem; font-size: 2.5rem;" aria-hidden="true">✉️</div>
+        <h2 id="newsletter-heading">Weekly Pasta Dispatch</h2>
+        <p>One email, every Friday. Fresh recipe, one community story, and at least one unpopular pasta opinion.</p>
+        <form class="newsletter__form" aria-label="Newsletter signup">
+          <input
+            type="email"
+            class="form-input"
+            placeholder="your@email.com"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="btn btn-wine">Subscribe</button>
+        </form>
+        <p style="font-size: 0.85rem; color: var(--blush); margin-top: 0.75rem; opacity: 0.7;">No spam. Unsubscribe anytime. We hate soggy pasta and spam equally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">PastaLoverClub</a>
+          <p class="footer__tagline">al dente since forever</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="club.html" class="footer__link">About</a></li>
+            <li><a href="gallery.html" class="footer__link">Recipes</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="club.html#join" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i data-feather="facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 PastaLoverClub. Made with 🍝 and questionable amounts of parmesan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
